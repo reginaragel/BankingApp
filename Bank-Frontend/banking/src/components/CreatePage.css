@@ -1,0 +1,79 @@
+.main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+.title span{
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+.fields label{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+.fields input[type="text"],
+.fields input[type="email"],
+.fields input[type="number"],
+.fields input[type="date"],
+.fields input[type="file"],
+.fields input[type="password"],
+.fields textarea {
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.fields input[type="text"]:focus,
+.fields input[type="email"]:focus,
+.fields input[type="number"]:focus,
+.fields input[type="date"]:focus,
+.fields input[type="file"]:focus,
+.fields input[type="password"]:focus,
+.fields textarea:focus {
+    border-color: #f8b6be;
+}
+textarea{
+    resize: none;
+    height: 80px;
+}
+.fields button{
+    padding: 12px 30px;
+    background-color: #f8b6be;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.fields button:hover{
+    background-color: #ef7f8c;
+}

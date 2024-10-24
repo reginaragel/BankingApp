@@ -1,0 +1,171 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+form input{
+    padding: 10px 60px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+form button{
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    background:green;
+    color: white;
+    cursor: pointer;
+}
+form button:hover{
+    background: rgb(8, 152, 8);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: rgb(27, 26, 26);
+}
+.prof_details{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.prof_container{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.prof_container p{
+    margin: 0;
+    padding: 8px;
+    border: 1px soild #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.actions{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.actions button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.actions button:hover{
+    background-color: #0056b3;
+}
+.deposit{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.5);
+   width: 100%;
+   height: 100%;
+}
+.deposit.active{
+    display: flex;
+}
+.deposit_container{
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.deposit_container input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.btn_depo{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_depo button{
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_depo #btn_1{
+    background: green;
+    color: white;
+}
+.btn_depo #btn_2{
+    background: red;
+    color: white;
+}
+.withdraw{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+
+}
+.withdraw.active{
+    display: flex;
+}
+.withdraw_container{
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+
+}
+
+.withdraw_container input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+
+}
+.btn_with{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_with button{
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_with #btn_3{
+    background: green;
+    color: white;
+}
+.btn_with #btn_4{
+    background: red;
+    color: white;
+}

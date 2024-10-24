@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0; /* Change from 0% to 0 */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (max-width:767px){
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .image img{
+        width: 50px; /* Reduce logo size for mobile */
+        height: 50px;
+    }
+    .elements{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .top_btn{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main_section{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .content_container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .main_img img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .navbar{
+        padding: 20px;
+    }
+    .image img{
+        width: 70px; 
+        height: 70px;
+    }
+    .content_container{
+        gap: 60px;
+    }
+    .main_img img{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+.image img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-weight: 600;
+    cursor: pointer;
+    color:rgb(242, 142, 106);
+}
+.top_btn{
+    display: flex;
+    gap: 40px;
+}
+.login_btn a{
+    background: #f8b6be;
+    padding:  10px 20px;
+    color:white;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.login_btn a:hover{
+    background: #ef7f8c;
+}
+.create_btn a{
+    background:#f8b6be ;
+    margin-right: 70px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.create_btn a:hover{
+    background: #ef7f8c;
+}
+.logout_btn a{
+    background:#f8b6be ;
+    margin-right: 70px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+
+
+}
+.logout_btn a:hover{
+    background: #ef7f8c;
+
+}
+.main_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_container{
+    display: flex;
+    align-items:center ;
+    gap: 100px;
+}
+.main_img img{
+    width: 600px;
+    height: 500px;
+    margin-top: 20px;
+}
+.text_content{
+    font-size: 24px;
+}
+.text_content p{
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.text_content span{
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+}
+.text_content button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-weight: bold;
+    background: #ef7f8c;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.text_content button:hover{
+    background: #f8b6be;
+}
+.text_content .para{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
